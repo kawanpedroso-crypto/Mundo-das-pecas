@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Cards - Mundo das Peças</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>🚗 Mundo das Peças</h1>
+    <p>Flash Cards Automotivos</p>
+</header>
+
+<div class="container">
+
+    <!-- Card 1 -->
+    <div class="card">
+        <div class="inner">
+            <div class="front">
+                <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=600&q=80" alt="Bico Injetor">
+                <h2>1️⃣ Para que serve o bico injetor?</h2>
+                <p>Clique para ver a resposta.</p>
+            </div>
+
+            <div class="back">
+                <h2>Resposta</h2>
+                <p>
+                    O <strong>bico injetor</strong> é responsável por pulverizar o combustível
+                    na quantidade correta dentro do motor, garantindo melhor desempenho,
+                    economia de combustível e menor emissão de poluentes.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+        <div class="inner">
+            <div class="front">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80" alt="Vela de Ignição">
+                <h2>2️⃣ Para que serve a vela de ignição?</h2>
+                <p>Clique para ver a resposta.</p>
+            </div>
+
+            <div class="back">
+                <h2>Resposta</h2>
+                <p>
+                    A <strong>vela de ignição</strong> gera a faísca que provoca a queima
+                    da mistura de ar e combustível dentro do cilindro,
+                    fazendo o motor funcionar.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+        <div class="inner">
+            <div class="front">
+                <img src="https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?auto=format&fit=crop&w=600&q=80" alt="Turbo Compressor">
+                <h2>3️⃣ O que é um turbo compressor?</h2>
+                <p>Clique para ver a resposta.</p>
+            </div>
+
+            <div class="back">
+                <h2>Resposta</h2>
+                <p>
+                    O <strong>turbo compressor</strong> utiliza os gases do escapamento para
+                    comprimir o ar que entra no motor, aumentando sua potência.
+                </p>
+
+                <h3>Quantos cavalos ele entrega?</h3>
+
+                <p>
+                    Depende do projeto do motor. Em média, um turbo pode aumentar
+                    entre <strong>30% e 70%</strong> da potência original.
+                    Exemplo: um motor de 150 cv pode chegar a aproximadamente
+                    <strong>200 a 255 cv</strong>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+    card.addEventListener("click",()=>{
+        card.classList.toggle("flip");
+    });
+});
+</script>
+
+</body>
+</html>
